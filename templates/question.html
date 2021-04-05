@@ -5,9 +5,7 @@
 <form action="/answer" method="POST">
   <h4>{{question.question}}</h4>
   {% for choice in question.choices %}
-  <p>
-    <input type="radio" name="answer">{{choice}}
-  </p>
+  <p> <input type="radio" name="answer" value="{{choice}}"> {{choice}} </p>
   {% endfor %}
   <button>Next</button>
 </form>
